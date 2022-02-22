@@ -10,16 +10,16 @@
   <link rel="reset" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
 
   <header>
-    <div class="container">
-      <img src="img/logo/wdc-logo.svg" class"logo" title='WDC LOGO' width="10%" height="10%">
+    <div class"container">
+      <a href="index.html"><img src="img/logo/wdc-logo.svg" class="logo" title='WDC LOGO' width="10%" height="10%">
       <nav>
         <ul>
           <li><a href="index.html">Work</a></li>
@@ -30,26 +30,28 @@
     </div>
   </header>
 
-  <main>
+  <main id="about">
     <div>
       <div>
         <h1>About</h1>
       </div>
     </div>
 
-    <div id="mypicture">
+    <div id="container">
       <picture>
         <source srcset="img/profile/WDC_WEBSITE_PROFILE@2x.png">
         <img src="img/profile/WDC_WEBSITE_PROFILE@2x.png" class="smallimg">
       </picture>
 
-      <div id="aboutme">
+      <div id="container">
         <h2>My Story</h2>
         <p>Hello, I’m Will, a UX/UI designer based in Manchester with a background in visual design
           and creative problem solving. I founded my own design practice and work closely with
           the music, events and hospitality industries, where I specialise in providing elegant
           solutions to my client’s problems.</p>
-        <a href="files/WILL_DA_COSTA_CV-2022.pdf" class="button cv" target"_blank">My CV</a>
+        <div class="container">
+          <a href="files/WILL_DA_COSTA_CV-2022.pdf" class="button cv" target"_blank">My CV</a>
+        </div>
       </div>
       <div>
         <h2>Skills & Tools<h2>
@@ -70,21 +72,19 @@
   </main>
 
   <footer id="contact">
-    <div>
-      <h2>Get in touch</h2>
+    <div class="container">
+      <h2>Get in Touch</h2>
       <p>If you would like to work together on a project, please don't hestiate to get in touch. Call: <a href="tel:+447821294876">+44 07821 294 876 </a>
         Or contact me via email
       </p>
       <div>
         <a href="mailto:info@willdacosta.design" class="button contact">Email</a>
       </div>
-      <div>
-        <a href="https://www.behance.net/willdacosta" target="blank">
+      <div class="icon-container">
+        <a href="https://www.behance.net/willdacosta" class="social-icon" target="blank">
           <img src="img/icon/5279109_behance_portfolio_social network_behance logo_icon.svg" width="24px" height="24px">
         </a>
-      </div>
-      <div>
-        <a href="https://www.instagram.com/w__da_costa" target="blank">
+        <a href="https://www.instagram.com/w__da_costa" class="social-icon" target="blank">
           <img src="img/icon/1161953_instagram_icon.svg" width="24px" height="24px">
         </a>
       </div>

@@ -3,39 +3,65 @@ Colors used:
 Primary Color (Grey): #EDEDED;
 Secondary Color (Black): #0D0D0D;
 */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
+  width: 100%;
   background-Color: #EDEDED;
   font-family: 'Manrope', sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.3;
   color: #0D0D0D;
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  background-color: #EDEDED;
+  text-align: center;
+  padding: 10px 0;
+  margin: 0;
+  box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.41);
+  position: fixed;
+  width: 100%;
 }
 
 h1, h2, h3, h4 {
   line-height: 1.1;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
 }
 
 h1 {
-  font-size: 2.75em;
+  font-size: 2.5em;
   font-weight: 800;
+  text-align: auto;
 }
 
 h2 {
-  font-size: 2.25em;
+  font-size: 1.60em;
   font-weight: 800;
+  line-height: 1.2;
+  text-align: center;
 }
 
 h3 {
-  font-size: 1.75em;
+  font-size: 1.50em;
   font-weight: 600;
 }
 
 h4 {
   font-size: 1.35em;
   font-weight: 400;
+}
+
+span{
+  text-align: center;
 }
 
 img {
@@ -63,15 +89,61 @@ a:active {
   /* selected link */
   color: #0D0D0D;
 }
-}
 
-a:hover,
+a:hover {
 color: #CC2900;
 }
 
 a:focus {
   color: #CC2900;
   text-decoration: underline;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+  display: inline-block;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #CC2900;
+}
+
+nav>ul>li>a:visited {
+  color: #0D0D0D;
+}
+
+nav>ul>li>a:hover {
+  color: #EDEDED;
+}
+
+nav>ul>li>a:active {
+  color: #CC2900;
+}
+
+main {
+  padding-top: 136px;
+}
+
+footer>ul {
+  list-style-type: none;
+  padding: 0;
+  display: inline-block;
+}
+
+footer>ul>li {
+  display: inline-block;
+}
+
+footer>ul>li>a {
+  display: inline-block;
 }
 
 .button {
@@ -81,14 +153,17 @@ a:focus {
   color: #EDEDED;
   /* needed to override the default link color */
   font-weight: 700;
+  text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #0D0D0D;
+  width: 100%;
   /* width of the border, type, color */
   transition: 0.2s opacity;
   margin-bottom: 16px;
+  border-radius: 12px;
 }
 
 .button:hover {
@@ -108,9 +183,12 @@ a:focus {
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  text-align: center;
   text-decoration: none;
   border: 2px solid #0D0D0D;
-  margin-bottom: 16px;
+  margin: auto;
+  width: 100%;
+  border-radius: 12px;
 }
 
 .button.contact:hover {
@@ -128,15 +206,90 @@ a:focus {
 
 .button.cv {
   background-color: #CC2900;
-  color: #EDEDED;
-  font-weight: 700;
+  color: #EDEDED font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   text-decoration: none;
-  margin-bottom: 16px;
+  border: 2px solid #0D0D0D;
+  margin: auto;
+  width: 100%;
+  border-radius: 12px;
 }
 
 .button.cv:hover {
   background-color: #0D0D0D;
-  color: #ededed
+  color: #ededed;
+}
+
+/* Layout styling */
+.container {
+  padding: 8px;
+  margin: auto;
+}
+
+.icon-container{
+  margin:8px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.row {
+  margin: 25px 0;
+  /*25px top and bottom, 0 left and right*/
+}
+
+.social-icon {
+  display: inline-block;
+  margin: 0 px;
+  max-width: 28px;
+  align-right: auto;
+  aligh-left: auto;
+}
+
+#work .row {
+  padding-bottom: 25px border-bottom: 1px solid #4a4a4a;
+}
+
+#hero {
+  background-color: #ededed;
+  padding: 20px 0px;
+  display: inline-block;
+  width: 100%;
+}
+
+#hero h1 {
+  text-align: center;
+  /*centers text*/
+  background-color: #ededed;
+  margin: 0;
+}
+
+#hero span {
+  text-align: center;
+}
+
+#about {
+  background-color: #ededed;
+  padding: 20px 0px;
+  margin: 8px;
+  display: inline-block;
+  width: 100%;
+}
+
+#contact {
+  background-color: #ededed;
+  padding: 20px 0px;
+  margin: 16px;
+}
+
+.center {
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  padding: 10px
+}
+
+.logo {
+  max-width: 250px;
+  text-align: center;
 }
