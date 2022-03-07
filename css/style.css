@@ -2,7 +2,8 @@
 Colors used:
 Primary Color (Grey): #EDEDED;
 Secondary Color (Black): #0D0D0D;
-Tertiary color (orange): #CC2900;
+Tertiary color (orange): #FF704D;
+Quatro color (Blue): #003EB3;
 */
 * {
   box-sizing: border-box;
@@ -54,6 +55,7 @@ h2 {
 h3 {
   font-size: 1.50em;
   font-weight: 600;
+  margin: 6px;
 }
 
 h4 {
@@ -108,7 +110,7 @@ nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #CC2900;
+  color: ##FF704D;
 }
 
 nav>ul>li>a:visited {
@@ -116,11 +118,11 @@ nav>ul>li>a:visited {
 }
 
 nav>ul>li>a:hover {
-  color: #CC2900;
+  color: ##FF704D;
 }
 
 nav>ul>li>a:active {
-  color: #CC2900;
+  color: ##FF704D;
 }
 
 main {
@@ -158,7 +160,7 @@ footer>ul>li>a {
 
 .button:hover {
   opacity: 0.8;
-  background-color: #CC2900;
+  background-color: #FF704D;
 }
 
 .button:active {
@@ -166,10 +168,10 @@ footer>ul>li>a {
 }
 
 .button.contact {
-  padding: 8px 16px;
-  margin: auto;
+  padding: 12px 24px;
+  margin: 16px;
   font-weight: 700;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.15em;
   color: #0D0D0D;
   text-align: center;
   text-decoration: none;
@@ -200,7 +202,7 @@ footer>ul>li>a {
   color: #EDEDED font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
-  background-color: #CC2900;
+  background-color: #FF704D;
   border: 2px solid #0D0D0D;
   border-radius: 12px;
 }
@@ -279,25 +281,28 @@ footer>ul>li>a {
 
 #contact {
   display: inline-block;
-  background-color: #CC2900;
+  background-color: #FF704D;
   width: 100%;
   padding: 16px;
   text-align: center;
 }
 
 #contact h2{
-  color: #ededed;
+  color: #0d0d0d;
   text-align: center;
 }
 
 #contact p{
-  color: #ededed;
+  color: #0D0D0D;
 }
 
 #header {
   padding: 12px;
 }
 
+#footer {
+  color: #0d0d0d;
+}
 .center {
   width: 50%;
   padding: 10px margin: auto;
@@ -444,71 +449,8 @@ Large devices (1024px or larger)
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {
-  .container {
-    max-width: 1200px;
-    margin-right: auto;
-    margin-left: auto;
-  }
 
-  [class*="col-"] {
-    float: left;
-    padding: 10px;
-  }
-
-  header {
-    text-align: unset;
-  }
-
-  nav {
-    float: right;
-    width: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-  }
-
-  #work .container {
-    max-width: 1200px;
-  }
-
-  #hero span {
-    display: block;
-  }
-
-}
 
 /* ==============================
 Extra-large devices (1920px or larger)
 ================================= */
-@media only screen and (min-width: 1920px) {
-  .container {
-    max-width: 1200px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  [class*="col-"] {
-    float: left;
-    padding: 10px;
-  }
-
-  header {
-    text-align: unset;
-  }
-
-  nav {
-    float: right;
-    width: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-  }
-
-  #hero span {
-    display: block;
-  }
-
-  #work .container {
-    max-width: 1200px;
-  }
-
-}
