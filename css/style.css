@@ -28,9 +28,8 @@ body {
 header {
   position: fixed;
   width: 100%;
-  padding: 10px 0;
+  padding: 10px 0 4px;
   margin: 0;
-  text-align: center;
   background-color: #EDEDED;
   box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.41);
 }
@@ -80,7 +79,7 @@ a:hover {
 
 a:visited {
   /* visited link */
-  color: #ededed;
+  color: #0D0D0D;
 }
 
 a:active {
@@ -89,22 +88,18 @@ a:active {
 }
 
 a:hover {
-  color: #EDEDED;
+  color: #0D0D0D;
 }
 
 a:focus {
-  color: #EDEDED;
+  color: #0D0D0D;
 }
 
 nav>ul {
   list-style-type: none;
   padding: 0;
-  display: inline-block;
 }
 
-nav>ul>li {
-  display: inline-block;
-}
 
 nav>ul>li>a {
   padding: 0 15px;
@@ -164,7 +159,7 @@ footer>ul>li>a {
 }
 
 .button:active {
-  color: #EDEDED;
+  color: #0D0D0D;
 }
 
 .button.contact {
@@ -247,7 +242,6 @@ footer>ul>li>a {
 }
 
 #hero {
-  margin-top: 60px;
   padding: 20px 16px;
   background-color: #ededed;
 }
@@ -303,6 +297,7 @@ footer>ul>li>a {
 #footer {
   color: #0d0d0d;
 }
+
 .center {
   width: 50%;
   padding: 10px margin: auto;
@@ -310,9 +305,47 @@ footer>ul>li>a {
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 150px;
   text-align: center;
+  height: auto;
 }
+
+
+/* Navigation styling*/
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
 
 /* CSS Animation */
 
@@ -380,7 +413,7 @@ Medium devices (640px and larger)
   }
 
   main {
-    padding-top: 80px;
+    padding-top: 24px;
   }
 
   body {
@@ -389,6 +422,9 @@ Medium devices (640px and larger)
 
   #hero {
     text-align: center;
+    margin: 60px;
+    padding: 20px 16px;
+    background-color: #ededed;
   }
 
   #hero span {
@@ -408,6 +444,28 @@ Medium devices (640px and larger)
   #about {
     padding-top: 80px;
   }
+
+  .logo {
+    max-width: 250px;
+    text-align: center;
+  }
+
+  nav > ul > li {
+  display: inline-block;
+}
+
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+.navtoggle li:last-child {
+  display: none;
+}
+
+nav > ul {
+  margin: 1em 0;
+}
+
 }
 
 /* ==============================

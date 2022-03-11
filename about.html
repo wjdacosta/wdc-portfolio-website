@@ -13,60 +13,65 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/dea887d0fc.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
   <header id="header">
     <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
       <a href="index.html"><img src="img/logo/wdc-logo.svg" class="logo" title='WDC LOGO'></a>
       <nav>
         <ul>
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
         </ul>
       </nav>
     </div>
+</div>
   </header>
 
   <main id="main">
-    <div id="hero" class="container">
-      <h1>About</h1>
-      <picture>
-        <source srcset="img/profile/WDC_WEBSITE_PROFILE@2x.png">
-        <img src="img/profile/WDC_WEBSITE_PROFILE@2x.png" class="smallimg">
-      </picture>
-      <h2>My Story</h2>
-      <p>Hello, I’m Will, a UX/UI designer based in Manchester with a background in visual design
-        and creative problem solving. I founded my own design practice and work closely with
-        the music, events and hospitality industries, where I specialise in providing elegant
-        solutions to my client’s problems.</p>
-      <a href="files/WILL_DA_COSTA_CV-2022.pdf" class="button cv" target="_blank">My CV</a>
-    </div>
-
     <div class="container">
-      <h2>Skills and Tools</h2>
-      <div class="row">
-        <div class="column col-md-6 col-lg-7">
-          <h3>Relevant Skills</h3>
-          <ul>
-            <li>User Research</li>
-            <li>Wire Framing</li>
-            <li>User Interface Design</li>
-          </ul>
-        </div>
-        <div class="column col-md-6 col-lg-5">
-          <h3>Tools I use</h3>
-          <ul>
-            <li>Figma</li>
-            <li>Illustrator</li>
-            <li>Photoshop</li>
-          </ul>
+      <div id="hero" class="container">
+        <h1>About</h1>
+        <picture>
+          <source srcset="img/profile/WDC_WEBSITE_PROFILE@2x.png">
+          <img src="img/profile/WDC_WEBSITE_PROFILE@2x.png" class="smallimg">
+        </picture>
+        <h2>My Story</h2>
+        <p>Hello, I’m Will, a UX/UI designer based in Manchester with a background in visual design
+          and creative problem solving. I founded my own design practice and work closely with
+          the music, events and hospitality industries, where I specialise in providing elegant
+          solutions to my client’s problems.</p>
+        <a href="files/WILL_DA_COSTA_CV-2022.pdf" class="button cv" target="_blank">My CV</a>
+      </div>
+
+      <div class="container">
+        <h2>Skills and Tools</h2>
+        <div class="row">
+          <div class="column col-md-6 col-lg-7">
+            <h3>Relevant Skills</h3>
+            <ul>
+              <li>User Research</li>
+              <li>Wire Framing</li>
+              <li>User Interface Design</li>
+            </ul>
+          </div>
+          <div class="column col-md-6 col-lg-5">
+            <h3>Tools I use</h3>
+            <ul>
+              <li>Figma</li>
+              <li>Illustrator</li>
+              <li>Photoshop</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-
   </main>
 
   <footer id="contact">
@@ -90,7 +95,10 @@
       <p> © Copyright Will Da Costa 2022</p>
     </div>
   </footer>
-<script src="js/scripts.js"></script>
+
+  <!-- Custom Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>
