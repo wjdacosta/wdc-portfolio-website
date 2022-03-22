@@ -2,7 +2,7 @@
 Colors used:
 Primary Color (Grey): #EDEDED;
 Secondary Color (Black): #0D0D0D;
-Tertiary color (orange): #FF704D;
+Tertiary color (orange): #C02600;
 Quatro color (Blue): #003EB3;
 */
 * {
@@ -105,7 +105,7 @@ nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: ##FF704D;
+  color: ##C02600;
 }
 
 nav>ul>li>a:visited {
@@ -113,11 +113,11 @@ nav>ul>li>a:visited {
 }
 
 nav>ul>li>a:hover {
-  color: ##FF704D;
+  color: ##C02600;
 }
 
 nav>ul>li>a:active {
-  color: ##FF704D;
+  color: ##C02600;
 }
 
 main {
@@ -150,14 +150,14 @@ footer>ul>li>a {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  background-color: #FF704D;
+  background-color: #C02600;
   border-radius: 3px;
   transition: 0.2s opacity;
 }
 
 .button:hover {
   opacity: 0.8;
-  background-color: #FF704D;
+  background-color: #C02600;
 }
 
 .button:active {
@@ -201,7 +201,7 @@ footer>ul>li>a {
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
-  background-color: #FF704D;
+  background-color: #C02600;
   border: 2px solid #0D0D0D;
   border-radius: 12px;
   padding: 10px;
@@ -280,7 +280,7 @@ footer>ul>li>a {
 
 #contact {
   display: inline-block;
-  background-color: #FF704D;
+  background-color: #C02600;
   width: 100%;
   padding: 16px;
   text-align: center;
